@@ -16,6 +16,7 @@ const isIcon = ({ isIcon }) => {
   `
 }
 
+/* Default styles for all the buttons */
 export const Button = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
@@ -50,6 +51,7 @@ export const Button = styled.div`
   ${isCircular}
 `
 
+/* Styled for a label element inside a button */
 export const Label = styled.span`
   margin: 0;
   margin-left: 0.5em;

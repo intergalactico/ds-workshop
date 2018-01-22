@@ -1,8 +1,13 @@
+/* Helpful imports */
 import React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
+
+/* The components to use in the stories */
 import Box from 'Box'
 import Icon from 'Icon'
+
+/* The component to document */
 import Button from '.'
 
 storiesOf('Button', module)

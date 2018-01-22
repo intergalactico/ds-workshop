@@ -1,3 +1,8 @@
+/*
+ * In here, we define default theme constants. They can be
+ * changed, or there can be another theme.
+ */
+
 const theme = {}
 
 // [ normal, dark, light ]

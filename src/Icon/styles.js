@@ -11,6 +11,8 @@ const hasBorder = ({ hasBorder }) => {
     border: 1px solid transparent;
   `
 }
+
+/* Default styles for Icon */
 export const Icon = styled.div`
   display: inline-flex;
   justify-content: center;

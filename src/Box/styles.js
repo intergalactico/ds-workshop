@@ -12,6 +12,9 @@ const addSpace = ({ hSpace, vSpace }) => {
   `
 }
 
+/*
+ * A styled component. By default, rendered with div
+ */
 export const Box = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   border-radius: ${p => p.theme.sizes.radius};
