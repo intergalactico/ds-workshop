@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { withColor, withSize } from 'styled-utils'
+import { withSize } from 'styled-utils'
 
 const addSpace = ({ hSpace, vSpace }) => {
   if (!hSpace && !vSpace) return
@@ -16,10 +16,15 @@ const addSpace = ({ hSpace, vSpace }) => {
  * A styled component. By default, rendered with div
  */
 export const Box = styled.div`
-  font-family: ${p => p.theme.fonts.primary};
-  border-radius: ${p => p.theme.sizes.radius};
-  box-shadow: ${p => p.theme.shadows.normal};
+  font-family: ${p => 'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif'};
+  border-radius: ${p => '3px'};
+  box-shadow: ${p => `
+    0 2px 3px rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.1)
+  `};
   padding: ${p => p.padding};
+  background: ${p => p.color};
+  color: ${p => p.textColor };
   position: relative;
 
   &:not(:last-child) {
@@ -27,6 +32,5 @@ export const Box = styled.div`
   }
 
   ${addSpace}
-  ${withColor}
   ${withSize}
 `

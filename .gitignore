@@ -3,3 +3,4 @@ lib/**/*
 *hot-update*
 *npm-debug*
 .DS_Store
+storybook-static/
