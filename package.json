@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "demo": "webpack-dev-server --config webpack.demo.config.js --content-base build",
-    "flow": "flow"
+    "flow": "flow",
+    "create-component": "./node_modules/add-component/index.js --no-index"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "@storybook/react": "^3.2.4",
     "@storybook/storybook-deployer": "^2.0.0",
+    "add-component": "^2.5.0",
     "babel-eslint": "7.2.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-module-resolver": "^2.7.1",
