@@ -16,6 +16,16 @@ npm install
 npm start
 ```
 
+## Tools
+
+### Adding a new component
+
+You can add components by using this command
+```
+npm run create-component MyComponent
+```
+It will create a new folder for the component and basic files for styling and documenting.
+
 ##  Build the library
 
 ```
