@@ -36,6 +36,7 @@
   "author": "Varya Stepanova <mail@varya.me>",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-console": "^1.0.0",
     "@storybook/react": "^3.2.4",
     "@storybook/storybook-deployer": "^2.0.0",
     "add-component": "^2.5.0",
