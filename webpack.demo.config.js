@@ -9,6 +9,13 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'url-loader?limit=10000',
+          'img-loader'
+        ]
       }
     ]
   },
