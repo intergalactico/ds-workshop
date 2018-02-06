@@ -3,21 +3,6 @@ import ReactDOM from 'react-dom'
 
 import { Box, Button, Icon } from '../lib/my-awesome-library'
 
-/*
-import { theme, Button } from '../lib/my-awesome-library'
-*/
-
-/*
-const App = () => {
-  return (
-    <div>
-      <h1>Hello world</h1>
-      <Button color="primary">1111</Button>
-    </div>
-  )
-}
-*/
-
 const App = () => {
   return (
     <div>
