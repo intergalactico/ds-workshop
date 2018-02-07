@@ -45,3 +45,12 @@ storiesOf('Icon', module)
       </Box>
     )
   })
+  .add('social icons', () => {
+    return (
+      <Box>
+        <Icon name='twitter' color='#000' isInverted/>
+        <Icon name='linkedin' color='#888888' isInverted />
+        <Icon name='github' color='#1b8ceb'isInverted />
+      </Box>
+    )
+  })
