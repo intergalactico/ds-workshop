@@ -62,8 +62,10 @@
     "yargs": "^8.0.2"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",
+    "loki": "0.9.1",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "react-router-dom": "^4.2.2",
