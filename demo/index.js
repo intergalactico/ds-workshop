@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Home from './home'
 import About from './about'
 
-import { Box, Button, Icon } from '../lib/my-awesome-library'
-
 const App = () => (
   <Router>
     <div>
