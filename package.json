@@ -9,7 +9,7 @@
     "start": "start-storybook -p 6005",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "demo": "webpack-dev-server --config webpack.demo.config.js --content-base build",
+    "demo": "webpack-dev-server --config webpack.demo.config.js --content-base build --history-api-fallback",
     "flow": "flow",
     "create-component": "./node_modules/add-component/index.js --no-index"
   },
@@ -63,6 +63,7 @@
     "lodash": "^4.17.4",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
+    "react-router-dom": "^4.2.2",
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2",
     "styled-utils": "^1.2.4"
