@@ -2,6 +2,7 @@
 import React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 
 /* The components to use in the stories */
 import Box from '../Box'
@@ -10,7 +11,8 @@ import Box from '../Box'
 import Icon from '.'
 
 storiesOf('Icon', module)
-  .add('simple usage', withTheme(() => {
+  .add('simple usage',
+    withTheme(withInfo()(() => {
     return (
       <div>
         <Box>
@@ -34,8 +36,9 @@ storiesOf('Icon', module)
         </Box>
       </div>
     )
-  }))
-  .add('with different size', withTheme(() => {
+  })))
+  .add('with different size',
+    withTheme(withInfo()(() => {
     return (
       <Box>
         <Icon name='star' color='black' isInverted size='small' />
@@ -45,8 +48,9 @@ storiesOf('Icon', module)
         <Icon name='bug' color='danger' isInverted size='huge' />
       </Box>
     )
-  }))
-  .add('social icons', withTheme(() => {
+  })))
+  .add('social icons',
+    withTheme(withInfo()(() => {
     return (
       <Box>
         <Icon name='twitter' color='#000' isInverted/>
@@ -54,4 +58,4 @@ storiesOf('Icon', module)
         <Icon name='github' color='#1b8ceb'isInverted />
       </Box>
     )
-  }))
+  })))

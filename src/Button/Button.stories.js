@@ -2,6 +2,7 @@
 import React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 
 /* The components to use in the stories */
 import Box from 'Box'
@@ -12,7 +13,7 @@ import Button from '.'
 
 storiesOf('Button', module)
   .add('index',
-    withTheme(() => {
+    withTheme(withInfo()(() => {
       return (
         <div>
           <Box>
@@ -34,9 +35,9 @@ storiesOf('Button', module)
           </Box>
         </div>
       )
-  }))
+  })))
   .add('colors',
-    withTheme(() => {
+    withTheme(withInfo()(() => {
       return (
         <div>
           <Box>
@@ -66,20 +67,21 @@ storiesOf('Button', module)
           </Box>
         </div>
       )
-    })
-  )
-  .add('with different size', withTheme(() => {
-    return (
-      <Box>
-        <Button color='primary' size='tiny'>Tiny</Button>
-        <Button color='success' size='small'>Small</Button>
-        <Button color='danger' size='normal'>Normal</Button>
-        <Button color='gray' size='large'>Large</Button>
-        <Button color='black' size='xlarge'>XLarge</Button>
-      </Box>
+    })))
+  .add('with different size',
+    withTheme(withInfo()(() => {
+      return (
+        <Box>
+          <Button color='primary' size='tiny'>Tiny</Button>
+          <Button color='success' size='small'>Small</Button>
+          <Button color='danger' size='normal'>Normal</Button>
+          <Button color='gray' size='large'>Large</Button>
+          <Button color='black' size='xlarge'>XLarge</Button>
+        </Box>
     )
-  }))
-  .add('with icon', withTheme(() => {
+  })))
+  .add('with icon',
+    withTheme(withInfo()(() => {
     return (
       <Box>
         <Button color='primary' size='normal'>
@@ -95,4 +97,4 @@ storiesOf('Button', module)
         </Button>
       </Box>
     )
-  }))
+  })))
