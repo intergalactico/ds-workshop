@@ -1,19 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-<<<<<<< HEAD
-import { Box, Button, Icon } from '../lib/my-awesome-library'
-
-const Home = () => {
-  return (
-=======
 import { ThemeProvider } from 'styled-components'
 import { theme, Box, Button, Icon } from '../lib/my-awesome-library'
 
 const Home = () => {
   return (
     <ThemeProvider theme={theme}>
->>>>>>> 2 pages for the demo
     <div>
       <h1>Hello world</h1>
       <Box color='#1b8ceb' textColor='#ffffff' tone={2}>Some text in box</Box>
@@ -30,10 +23,7 @@ const Home = () => {
         <Icon name='bug' color='#e91e63' isInverted size='3rem' />
       </Box>
     </div>
-<<<<<<< HEAD
-=======
     </ThemeProvider>
->>>>>>> 2 pages for the demo
   )
 }
 

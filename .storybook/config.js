@@ -14,6 +14,10 @@ setConsoleOptions({
   panelExclude: [],
 })
 
+setConsoleOptions({
+  panelExclude: [],
+})
+
 function loadStories() {
   req.keys().forEach((filename) => req(filename))
 }

@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 import {
+  withSize,
+  withColor,
   isCircular
 } from 'styled-utils'
 
@@ -19,8 +21,9 @@ export const Icon = styled.div`
   width: 1.6em;
   height: 1.6em;
   line-height: 1.5;
-  font-size: ${p => p.size ? p.size : '1rem'}; 
-  color: ${p => p.color};
+
+  ${withSize}
+  ${withColor}
   ${isCircular}
   ${hasBorder}
 `

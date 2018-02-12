@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components'
 import {
   isCircular,
+  withSize,
+  withColor,
   withHover
 } from 'styled-utils'
 
@@ -16,9 +18,9 @@ const isIcon = ({ isIcon }) => {
 
 /* Default styles for all the buttons */
 export const Button = styled.div`
-  font-family: ${p => 'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif'};
+  font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
-  height: ${p => '2.40em'};
+  height: ${p => p.theme.sizes.height};
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -27,24 +29,25 @@ export const Button = styled.div`
   outline: none;
   border: 1px solid;
   border-color: transparent;
-  border-radius: ${p => '3px'};
+  border-radius: ${p => p.theme.sizes.radius};
   box-sizing: border-box;
   line-height: 1.5;
   position: relative;
   user-select: none;
   text-decoration: none;
-  background-color: ${p => p.color};
-  color: ${p => p.textColor};
-  font-size: ${p => p.size ? p.size : '1rem'};
+
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
   }
 
   & .icon {
     margin: 0 5px 0 0;
-    font-size: ${p => p.size ? p.size : '1rem'};
+    ${withSize}
   }
+
   ${isIcon}
+  ${withSize}
+  ${withColor}
   ${isCircular}
 `
 
@@ -54,8 +57,10 @@ export const Label = styled.span`
   margin-left: 0.5em;
   padding: 0 1em 0 0.5em;
   display: inline-flex;
-  border-radius: 0 ${p => '3px'} ${p => '3px'} 0;
-  height: ${p => ('2.40em'.split('em')[0] - 0.1 + 'em')};
-  line-height: ${p => '2.40em'};
-  font-size: ${p => p.size ? p.size : '1rem'};
+  border-radius: 0 ${p => p.theme.sizes.radius} ${p => p.theme.sizes.radius} 0;
+  height: ${p => (p.theme.sizes.height.split('em')[0] - 0.1 + 'em')};
+  line-height: ${p => p.theme.sizes.height};
+
+  ${withSize}
+  ${withColor}
 `;
