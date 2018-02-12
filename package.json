@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "yarn build",
     "build": "webpack --env production",
-    "start": "start-storybook -p 6005",
+    "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "demo": "webpack-dev-server --config webpack.demo.config.js --content-base build --history-api-fallback",
