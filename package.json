@@ -4,7 +4,6 @@
   "description": "Styled-components library setup (copied from React Components used at @Coderbox)",
   "main": "lib/my-awesome-library.js",
   "scripts": {
-    "prepare": "yarn build",
     "build": "webpack --env production",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -53,7 +52,6 @@
     "file-loader": "^1.1.6",
     "flow-bin": "^0.54.1",
     "img-loader": "^2.0.1",
-    "loki": "0.9.1",
     "standard": "^10.0.3",
     "url-loader": "^0.6.2",
     "webpack": "^3.5.4",
@@ -70,17 +68,5 @@
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2",
     "styled-utils": "^1.2.4"
-  },
-  "loki": {
-    "configurations": {
-      "chrome.laptop": {
-        "target": "chrome.app",
-        "width": 1366,
-        "height": 768,
-        "deviceScaleFactor": 1,
-        "mobile": false,
-        "fitWindow": false
-      }
-    }
   }
 }
