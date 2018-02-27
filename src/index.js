@@ -12,5 +12,6 @@ import Typography from 'Typography'
 export {
   Box,
   Button,
-  Icon
+  Icon,
+  Typography
 }

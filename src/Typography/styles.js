@@ -49,7 +49,19 @@ export const Header1 = styled.h1`
 `
 
 export const Header2 = styled.h2`
-  font-family: futura-pt-bold;
+  font-family: futura-pt-bold, sans-serif;
+  font-size: 22px;
+  color: #353740;
+  line-height: 1.4em;
+  margin: 0;
+`
+
+export const Header3 = styled.h3`
+  font-family: lato, sans-serif;
+  font-size: 16px;
+  color: #747d88;
+  font-weight: 700;
+  margin: 0;
 `
 
 export const P = styled.p`
