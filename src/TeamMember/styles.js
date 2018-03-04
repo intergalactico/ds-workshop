@@ -5,7 +5,9 @@ import styled, { css } from 'styled-components'
  * styled-component takes the styles from the Typography component
  * and re-defines them.
  */
-import * as ts from '../Typography/styles.js'
+import * as ts from '../Typography/styles'
+
+import colors from '../Colors/colorset'
 
 export const TeamMember = styled.div`
   text-align: center;
@@ -21,8 +23,11 @@ export const Title = styled(ts.Header3)`
   color: green;
 `
 
+/*
+ * The colors can be takes from the set and used as variables.
+ */
 export const IconList = styled.ul`
-  color: #747d88;
+  color: ${colors.grey};
   font-size: 16px;
   margin: 0;
   margin-top: 20px;
@@ -36,6 +41,6 @@ export const IconListItem = styled.li`
 `
 
 export const IconLink = styled.a`
-  color: #747d88;
+  color: ${colors.grey};
   text-decoration: none;
 `
