@@ -1,3 +1,8 @@
+/*
+ * The Icon component renders icons in different colors. This component
+ * can be used in other components. For example, in the TeamMember component.
+ */
+
 import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'

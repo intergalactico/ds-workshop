@@ -1,6 +1,7 @@
 /*
  * Button component. It provides interfaces for all types
- * of the buttons
+ * of the buttons. Differnt types of the buttons are coded
+ * as different components and imported here.
  */
 
 import React from 'react'

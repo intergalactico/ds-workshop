@@ -1,11 +1,22 @@
 import styled, { css } from 'styled-components'
 
+/*
+ * One styled-component can re-use styles from another. The TeamMember
+ * styled-component takes the styles from the Typography component
+ * and re-defines them.
+ */
 import * as ts from '../Typography/styles.js'
 
 export const TeamMember = styled.div`
   text-align: center;
 `
 
+/*
+ * By analogy to defining an HTML tag and styles for an element,
+ * in styled-component you can take an already defined element and
+ * provide additional styles to it. It will use the tag of initial
+ * elements.
+ */
 export const Title = styled(ts.Header3)`
   color: green;
 `

@@ -1,3 +1,7 @@
+/*
+ * ButtonLabel is a component that renders a button with a label.
+ */
+
 import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'

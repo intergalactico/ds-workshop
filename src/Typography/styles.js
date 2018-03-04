@@ -1,5 +1,16 @@
 import styled, { injectGlobal } from 'styled-components'
 
+/*
+ * The feature of styled components is that they encapsulate the
+ * styles by providing unique classnames. This ensures that the styles of
+ * one component do not mix with the styles of other components.
+ * However, sometimes you need to provide global CSS to be used accross
+ * the whole application. This is possible with injectGlobal method.
+ * Defining fonts for typography is a good demonstration for such a need.
+ *
+ * Documentation: https://www.styled-components.com/docs/api#injectglobal
+ */
+
 injectGlobal`
   @font-face {
     font-family:"futura-pt-bold";
@@ -44,6 +55,11 @@ injectGlobal`
   }
 `
 
+/*
+ * Typography component provides styles for basic typography elements
+ * such as headers and paragraphs.
+ */
+
 export const Header1 = styled.h1`
   font-family: futura-pt-bold;
 `
@@ -67,6 +83,12 @@ export const Header3 = styled.h3`
 export const P = styled.p`
   font-family: lato;
 `
+
+/*
+ * In ordder to show in the story (documentation) what are the available
+ * fonts, this component provides styles for each font. They are not
+ * meant to be used in the other components, only in dpcumentation.
+ */
 
 export const FuturaBold = styled.p`
   font-family: futura-pt-bold;

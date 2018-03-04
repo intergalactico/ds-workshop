@@ -1,3 +1,7 @@
+/*
+ * SimpleButton is a basic component needed to render a button.
+ */
+
 import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'

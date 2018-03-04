@@ -3,6 +3,11 @@ import {
   isCircular
 } from 'styled-utils'
 
+/*
+ * In styled-components, you can define functions that output
+ * CSS properties. This functions can be called from inside the
+ * element declarations.
+ */
 const hasBorder = ({ hasBorder }) => {
   if (!hasBorder) return
   return css`

@@ -1,3 +1,7 @@
+/*
+ * ButtonLink is a component which renders a button with a link.
+ */
+
 import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'

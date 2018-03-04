@@ -1,9 +1,19 @@
+/*
+ * All the button components are using the same styled-component. There is only
+ * one file with styles (this one) which is imported into all the button components.
+ */
+
 import styled, { css } from 'styled-components'
 import {
   isCircular,
   withHover
 } from 'styled-utils'
 
+/*
+ * In styled-components, you can define functions that output
+ * CSS properties. This functions can be called from inside the
+ * element declarations.
+ */
 const isIcon = ({ isIcon }) => {
   if (!isIcon) return
   return css`

@@ -1,3 +1,8 @@
+/*
+ * The stories (documentation) for the TeamMember component render two different
+ * cases: with and without providing a list of social networks.
+ */
+
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
