@@ -1,13 +1,3 @@
-# Start you own library
-
-```
-git clone https://github.com/SC5/ds-workshop-storybook-boilerplate.git
-cd ds-workshop-storybook-boilerplate
-rm -rf .git
-git init
-```
-
-
 # Development
 ## Run Storybook
 
