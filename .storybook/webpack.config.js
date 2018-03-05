@@ -16,6 +16,11 @@ module.exports = {
     rules: [
       // add your custom loaders.
       {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loaders: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'url-loader?limit=10000',
