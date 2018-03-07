@@ -20,11 +20,11 @@ storiesOf('TeamMember', module)
   .add('index',
     withInfo()(() => (
       <TeamMember
-        name="Mikko Häkkinen"
-        title="Main Organizer"
+        name="Donald Duck"
+        title="Director of Everything"
         social={{
-          twitter: 'mikkohakkinen',
-          linkedin: 'https://linkedin.com/in/mikkohakkinen'
+          twitter: 'donaldducknl',
+          linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
         }}
         avatar={avatar}
       />
@@ -32,7 +32,7 @@ storiesOf('TeamMember', module)
   .add('no social networks',
     withInfo()(() => (
       <TeamMember
-        name="Mikko Häkkinen"
-        title="Main Organizer"
+        name="Donald Duck"
+        title="Director of Everything"
       />
   )))

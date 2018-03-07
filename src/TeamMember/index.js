@@ -37,7 +37,7 @@ const TeamMember = (props) => {
         link = `https://twitter.com/@${social[key]}`
       }
 
-      return (<s.IconListItem>
+      return (<s.IconListItem key={'social-icon-item-' + key}>
           <s.IconLink href={link} target="_blank"><Icon name={key}/></s.IconLink>
         </s.IconListItem>)
     }) : null
