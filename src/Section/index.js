@@ -1,5 +1,5 @@
 /*
- * Section component provides a container with paddings
+ * Section component provides a container with paddings.
  */
 import React from 'react'
 

@@ -1,5 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+/*
+ * withInfo is an addon which provides a block with
+ * information about the component. It includes the
+ * code samples and properties documentation.
+ */
+import { withInfo } from '@storybook/addon-info'
 
 import Typography from '.'
 
@@ -10,6 +16,10 @@ import Typography from '.'
  */
 
 storiesOf('Typography', module)
-  .add('index', () => (
-    <Typography />
-  ))
+  .add('index',
+    withInfo(`
+ Typography component is needed to provide global CSS such as
+ font and styles to use across all the other components.
+        `)(() => (
+      <Typography />
+    )))

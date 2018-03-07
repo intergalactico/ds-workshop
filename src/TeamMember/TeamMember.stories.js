@@ -18,7 +18,10 @@ const avatar = require('../../assets/avatar.jpg')
 
 storiesOf('TeamMember', module)
   .add('index',
-    withInfo()(() => (
+    withInfo(`
+ The TeamMember component renders a card of a team member. It contains
+ their avatar, name, title, and links to social networks.
+    `)(() => (
       <TeamMember
         name="Donald Duck"
         title="Director of Everything"

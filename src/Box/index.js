@@ -1,7 +1,7 @@
 /*
  * The Box component provides a container, inside which you can put
  * other components. It is used in the stories (documentation) to separate one
- * component from aanother.
+ * component from another.
  */
 
 import React from 'react'
@@ -9,7 +9,7 @@ import { string } from 'prop-types'
 import cx from 'classnames'
 import * as s from './styles'
 
-const Component = (props) => {
+const Box = (props) => {
 
   /* Adding an "API" classname, by which it is possible to redefine the component style properties */
   const className = cx(`box`, props.className)
@@ -18,15 +18,14 @@ const Component = (props) => {
   )
 }
 
-Component.displayName = 'Box'
-Component.defaultProps = {
+Box.defaultProps = {
   padding: '0.6em',
   color: 'white'
 }
-Component.propTypes = {
+Box.propTypes = {
   vSpace: string,
   hSpace: string,
   padding: string
 }
 
-export default Component
+export default Box

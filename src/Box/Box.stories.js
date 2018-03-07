@@ -13,7 +13,11 @@ import Box from '.';
 
 storiesOf('Box', module)
   .add('default',
-    withInfo()(() => {
+    withInfo(`
+ The Box component provides a container, inside which you can put
+ other components. It is used in the stories (documentation) to separate one
+ component from another.
+      `)(() => {
       return (
         <div>
           <Box>Some text in box</Box>

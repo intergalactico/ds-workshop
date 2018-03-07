@@ -1,16 +1,17 @@
 /*
  * Button component. It provides interfaces for all types
- * of the buttons. Differnt types of the buttons are coded
+ * of the buttons. Different types of the buttons are coded
  * as different components and imported here.
  */
 
 import React from 'react'
+import { string } from 'prop-types'
 
 import ButtonSimple from './ButtonSimple';
 import ButtonLink from './ButtonLink';
 import ButtonLabel from './ButtonLabel';
 
-const Component = ({ href, label, children, ...props }) => {
+const Button = ({ href, label, children, ...props }) => {
 
   /*
    * Different buttons to be rendered, depending on the
@@ -26,9 +27,9 @@ const Component = ({ href, label, children, ...props }) => {
 
 }
 
-Component.displayName = 'Button'
-Component.defaultProps = {
-  color: 'white'
+Button.propTypes = {
+  href: string,
+  label: string
 }
 
-export default Component
+export default Button

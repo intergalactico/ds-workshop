@@ -17,7 +17,9 @@ import Section, {SectionHeader, SectionText} from '.'
 
 storiesOf('Section', module)
   .add('index',
-    withInfo()(() => (
+    withInfo(`
+ Section component provides a container with paddings.
+    `)(() => (
       <Section>
         <SectionHeader>Test</SectionHeader>
         <SectionText>Text inside the section (with typography).</SectionText>

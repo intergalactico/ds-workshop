@@ -1,9 +1,10 @@
 /*
  * The TeamMember component renders a card of a team member. It contains
- * their avatar, name, title and links to social networks.
+ * their avatar, name, title, and links to social networks.
  */
 
 import React from 'react'
+import { string, array } from 'prop-types'
 
 /*
  * The TeamMember component has its own styles but also it used the styles
@@ -55,6 +56,13 @@ const TeamMember = (props) => {
       {socialList}
     </s.TeamMember>
   )
+}
+
+TeamMember.propTypes = {
+  name: string.isRequired,
+  title: string.isRequired,
+  avatar: string.isRequired,
+  social: array
 }
 
 export default TeamMember

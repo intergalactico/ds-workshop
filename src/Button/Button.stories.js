@@ -17,7 +17,11 @@ import Button from '.';
 
 storiesOf('Button', module)
   .add('index',
-    withInfo()(() => {
+    withInfo(`
+ Button component provides interfaces for all types
+ of the buttons. Different types of the buttons are coded
+ as different components and imported here.
+        `)(() => {
       return (
         <div>
           <Box>

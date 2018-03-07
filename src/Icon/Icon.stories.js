@@ -17,7 +17,10 @@ import Icon from '.'
 
 storiesOf('Icon', module)
   .add('simple usage',
-    withInfo()(() => {
+    withInfo(`
+ The Icon component renders icons in different colors. This component
+ can be used in other components. For example, in the TeamMember component.
+        `)(() => {
       return (
         <div>
           <Box>
