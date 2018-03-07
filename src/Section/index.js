@@ -4,7 +4,7 @@
 import React from 'react'
 
 /*
- * For it's styles, Section component uses plain CSS.
+ * For its styles, Section component uses plain CSS.
  * Change it to styled-components, if you want.
  */
 import s from './styles.css'
@@ -31,7 +31,7 @@ const Section = ({ children, ...props }) => {
 export default Section
 
 /*
- * For re-use of Typogrpahy styles, Section component has a couple of subcomponents to be
+ * For re-use of Typography styles, Section component has a couple of subcomponents to be
  * used as wrappers for texts and headers. Check out the story (documentation) to see how
  * these wrappers are used.
  */

@@ -8,7 +8,7 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
 /*
- * This story (documentaion) shows how to use the Section component and its
+ * This story (documentation) shows how to use the Section component and its
  * helping sub-components for the texts. The subcomponents are imported
  * as one object and are renamed to "t", this is shorter. Look below how
  * to wrap texts with them.

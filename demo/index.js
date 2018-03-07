@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 /*
  * Each page has its own file in the "demo" folder. By default, it is the Home
- * page. The code for it is in home.js file.
+ * page. The code for it is in the home.js file.
  */
 import Home from './home'
 import About from './about'

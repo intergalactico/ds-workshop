@@ -8,7 +8,7 @@ import { string, array } from 'prop-types'
 
 /*
  * The TeamMember component has its own styles but also it used the styles
- * from the Typography component. These styles are imported directly from the
+ * of the Typography component. These styles are imported directly from the
  * styled component file of the Typography component.
  */
 import * as s from './styles.js'
@@ -16,13 +16,13 @@ import * as ts from '../Typography/styles.js'
 
 /*
  * The TeamMember component reuses the Icon component when it needs to
- * rendder the icons for the social networks.
+ * render the icons for the social networks.
  */
 import Icon from '../Icon'
 
 const TeamMember = (props) => {
   /*
-   * Cards for different people output differnt information. This is communicated
+   * Cards for different people output different information. This is communicated
    * to the component with properties.
    */
   const { name, title, social, avatar } = props;

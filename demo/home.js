@@ -1,5 +1,5 @@
 /*
- * Each page is in fact a React component. It can import components from
+ * Each page is, in fact, a React component. It can import components from
  * the library and render them inside a container.
  */
 

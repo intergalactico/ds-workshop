@@ -3,10 +3,10 @@ import styled, { injectGlobal } from 'styled-components'
 /*
  * The feature of styled components is that they encapsulate the
  * styles by providing unique classnames. This ensures that the styles of
- * one component do not mix with the styles of other components.
- * However, sometimes you need to provide global CSS to be used accross
+ * one component does not mix with the styles of other components.
+ * However, sometimes you need to provide global CSS to be used across
  * the whole application. This is possible with injectGlobal method.
- * Defining fonts for typography is a good demonstration for such a need.
+ * Defining fonts for typography is a good demonstration of such a need.
  *
  * Documentation: https://www.styled-components.com/docs/api#injectglobal
  */
