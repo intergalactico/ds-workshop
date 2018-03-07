@@ -1,6 +1,11 @@
 /* Helpful imports */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+/*
+ * withInfo is an addon which provides a block with
+ * information about the component. It includes the
+ * code samples and properties documentation.
+ */
 import { withInfo } from '@storybook/addon-info'
 
 /* The component to document */

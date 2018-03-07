@@ -1,5 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+/*
+ * withInfo is an addon which provides a block with
+ * information about the component. It includes the
+ * code samples and properties documentation.
+ */
+import { withInfo } from '@storybook/addon-info'
 
 /*
  * This story (documentaion) shows how to use the Section component and its
@@ -10,10 +16,11 @@ import { storiesOf } from '@storybook/react'
 import Section, {SectionHeader, SectionText} from '.'
 
 storiesOf('Section', module)
-  .add('index', () => (
-    <Section>
-      <SectionHeader>Test</SectionHeader>
-      <SectionText>Text inside the section (with typography).</SectionText>
-      <p>Text inside the section (without typography).</p>
-    </Section>
-  ))
+  .add('index',
+    withInfo()(() => (
+      <Section>
+        <SectionHeader>Test</SectionHeader>
+        <SectionText>Text inside the section (with typography).</SectionText>
+        <p>Text inside the section (without typography).</p>
+      </Section>
+  )))
