@@ -10,6 +10,7 @@
 
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import Color from 'color'
 
 /* The components to use in the stories */
 import Box from '../Box'
@@ -20,7 +21,18 @@ storiesOf('Colors', module)
   .add('index', () => {
     const colorItems = Object.keys(set).map(key => {
 
-      return(<Box color={set[key]}>{key}</Box>)
+      const textColor = Color(set[key]).isLight() ? '#000' : '#FFF'
+
+      return(
+        <Box color={set[key]} textColor={textColor}>
+          {key}
+          <pre><code>{`/*Usage in styled-components*/
+import colors from '../Colors/colorset'
+export const MyComponent = styled.div`}`{`
+  color: \${colors.${key}};
+`}`</code></pre>
+        </Box>
+      )
     })
     return (
       <div>
