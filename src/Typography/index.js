@@ -13,18 +13,37 @@
 
 import React from 'react'
 
-import * as s from './styles.js'
+import * as ts from './styles.js'
 
 const Typography = () => {
+
   return (
     <div>
-      <s.FuturaBold>In Futura Bold: The quick brown fox jumps over the lazy dog.</s.FuturaBold>
-      <s.Lato>In Lato: The quick brown fox jumps over the lazy dog.</s.Lato>
+      <ts.FuturaBold>In Futura Bold: The quick brown fox jumps over the lazy dog.</ts.FuturaBold>
+      <ts.Lato>In Lato: The quick brown fox jumps over the lazy dog.</ts.Lato>
       <div>
-        <s.Header1>I am Header1</s.Header1>
-        <s.Header2>I am Header2</s.Header2>
-        <s.Header3>I am Header3</s.Header3>
-        <s.P>I am a paragraph</s.P>
+        <ts.Header1>I am Header1</ts.Header1>
+        <pre><code>{`import * as ts from '../Typography/styles.js
+<ts.Header1>I am Header1</ts.Header1>
+`}</code></pre>
+      </div>
+      <div>
+        <ts.Header2>I am Header2</ts.Header2>
+        <pre><code>{`import * as ts from '../Typography/styles.js
+<ts.Header2>I am Header2</ts.Header2>
+`}</code></pre>
+      </div>
+      <div>
+        <ts.Header3>I am Header3</ts.Header3>
+        <pre><code>{`import * as ts from '../Typography/styles.js
+<ts.Header3>I am Header3</ts.Header3>
+`}</code></pre>
+      </div>
+      <div>
+        <ts.P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ts.P>
+        <pre><code>{`import * as ts from '../Typography/styles.js
+<ts.P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ts.P>
+`}</code></pre>
       </div>
     </div>
   )
