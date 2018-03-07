@@ -24,7 +24,7 @@ storiesOf('Colors', module)
       const textColor = Color(set[key]).isLight() ? '#000' : '#FFF'
 
       return(
-        <Box color={set[key]} textColor={textColor}>
+        <Box color={set[key]} textColor={textColor} key={key}>
           {key}
           <pre><code>{`/*Usage in styled-components*/
 import colors from '../Colors/colorset'
