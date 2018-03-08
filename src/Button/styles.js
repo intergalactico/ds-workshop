@@ -3,11 +3,11 @@
  * one file with styles (this one) which is imported into all the button components.
  */
 
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 import {
   isCircular,
   withHover
-} from 'styled-utils'
+} from 'styled-utils';
 
 /*
  * In styled-components, you can define functions that output
@@ -15,14 +15,14 @@ import {
  * element declarations.
  */
 const isIcon = ({ isIcon }) => {
-  if (!isIcon) return
+  if (!isIcon) return;
   return css`
     padding: 0px 0.5em;
     & .icon {
       margin: 0;
     }
-  `
-}
+  `;
+};
 
 /* Default styles for all the buttons */
 export const Button = styled.div`
@@ -56,7 +56,7 @@ export const Button = styled.div`
   }
   ${isIcon}
   ${isCircular}
-`
+`;
 
 /* Styled for a label element inside a button */
 export const Label = styled.span`

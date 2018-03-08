@@ -1,13 +1,13 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 /*
  * withInfo is an addon which provides a block with
  * information about the component. It includes the
  * code samples and properties documentation.
  */
-import { withInfo } from '@storybook/addon-info'
+import { withInfo } from '@storybook/addon-info';
 
-import Typography from '.'
+import Typography from '.';
 
 /*
  * The story (documentation) for the Typography component
@@ -22,4 +22,4 @@ storiesOf('Typography', module)
  font and styles to use across all the other components.
         `)(() => (
       <Typography />
-    )))
+    )));

@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 import {
   isCircular
-} from 'styled-utils'
+} from 'styled-utils';
 
 /*
  * In styled-components, you can define functions that output
@@ -9,11 +9,11 @@ import {
  * element declarations.
  */
 const hasBorder = ({ hasBorder }) => {
-  if (!hasBorder) return
+  if (!hasBorder) return;
   return css`
     border: 1px solid transparent;
-  `
-}
+  `;
+};
 
 /* Default styles for Icon */
 export const Icon = styled.div`
@@ -28,4 +28,4 @@ export const Icon = styled.div`
   color: ${p => p.color};
   ${isCircular}
   ${hasBorder}
-`
+`;

@@ -3,22 +3,22 @@
  * their avatar, name, title, and links to social networks.
  */
 
-import React from 'react'
-import { string, array } from 'prop-types'
+import React from 'react';
+import { string, array } from 'prop-types';
 
 /*
  * The TeamMember component has its own styles but also it used the styles
  * of the Typography component. These styles are imported directly from the
  * styled component file of the Typography component.
  */
-import * as s from './styles.js'
-import * as ts from '../Typography/styles.js'
+import * as s from './styles.js';
+import * as ts from '../Typography/styles.js';
 
 /*
  * The TeamMember component reuses the Icon component when it needs to
  * render the icons for the social networks.
  */
-import Icon from '../Icon'
+import Icon from '../Icon';
 
 const TeamMember = (props) => {
   /*
@@ -33,15 +33,15 @@ const TeamMember = (props) => {
    * the styled-components for each icon.
    */
   const socialItems = social ? Object.keys(social).map(key => {
-      let link = social[key]
+      let link = social[key];
       if (key === 'twitter') {
-        link = `https://twitter.com/@${social[key]}`
+        link = `https://twitter.com/@${social[key]}`;
       }
 
       return (<s.IconListItem key={'social-icon-item-' + key}>
           <s.IconLink href={link} target="_blank"><Icon name={key}/></s.IconLink>
-        </s.IconListItem>)
-    }) : null
+        </s.IconListItem>);
+    }) : null;
   const socialList = social ? <s.IconList>{socialItems}</s.IconList> : null;
 
   /*
@@ -55,14 +55,14 @@ const TeamMember = (props) => {
       TODO: show title
       {socialList}
     </s.TeamMember>
-  )
-}
+  );
+};
 
 TeamMember.propTypes = {
   name: string.isRequired,
   title: string.isRequired,
   avatar: string.isRequired,
   social: array
-}
+};
 
-export default TeamMember
+export default TeamMember;

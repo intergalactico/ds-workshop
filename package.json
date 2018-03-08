@@ -5,6 +5,7 @@
   "main": "lib/my-awesome-library.js",
   "scripts": {
     "build": "webpack --env production",
+    "lint": "eslint ./ --ext .jsx --ext .js",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
@@ -12,6 +13,7 @@
     "flow": "flow",
     "create-component": "./node_modules/add-component/index.js --no-index"
   },
+  "eslintIgnore": ["demo", "lib"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/varya/styled-components-lib-setup.git"

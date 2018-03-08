@@ -4,28 +4,29 @@
  * component from another.
  */
 
-import React from 'react'
-import { string } from 'prop-types'
-import cx from 'classnames'
-import * as s from './styles'
+import React from 'react';
+import { string } from 'prop-types';
+import cx from 'classnames';
+import * as s from './styles';
 
 const Box = (props) => {
 
   /* Adding an "API" classname, by which it is possible to redefine the component style properties */
-  const className = cx(`box`, props.className)
+  const className = cx(`box`, props.className);
   return (
     <s.Box {...props} className={className} />
-  )
-}
+  );
+};
 
 Box.defaultProps = {
   padding: '0.6em',
   color: 'white'
-}
+};
+
 Box.propTypes = {
   vSpace: string,
   hSpace: string,
   padding: string
-}
+};
 
-export default Box
+export default Box;

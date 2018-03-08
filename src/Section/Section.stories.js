@@ -1,11 +1,11 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 /*
  * withInfo is an addon which provides a block with
  * information about the component. It includes the
  * code samples and properties documentation.
  */
-import { withInfo } from '@storybook/addon-info'
+import { withInfo } from '@storybook/addon-info';
 
 /*
  * This story (documentation) shows how to use the Section component and its
@@ -13,7 +13,7 @@ import { withInfo } from '@storybook/addon-info'
  * as one object and are renamed to "t", this is shorter. Look below how
  * to wrap texts with them.
  */
-import Section, {SectionHeader, SectionText} from '.'
+import Section, {SectionHeader, SectionText} from '.';
 
 storiesOf('Section', module)
   .add('index',
@@ -25,4 +25,4 @@ storiesOf('Section', module)
         <SectionText>Text inside the section (with typography).</SectionText>
         <p>Text inside the section (without typography).</p>
       </Section>
-  )))
+  )));

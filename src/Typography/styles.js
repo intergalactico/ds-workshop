@@ -1,4 +1,4 @@
-import styled, { injectGlobal } from 'styled-components'
+import styled, { injectGlobal } from 'styled-components';
 
 /*
  * The feature of styled components is that they encapsulate the
@@ -53,12 +53,12 @@ injectGlobal`
     src:url("https://use.typekit.net/af/48f634/00000000000000000001522f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/48f634/00000000000000000001522f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"),url("https://use.typekit.net/af/48f634/00000000000000000001522f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");
     font-style:italic;font-weight:500;
   }
-`
+`;
 
 /*
  * The styles below use the color from th set.
  */
-import colors from '../Colors/colorset'
+import colors from '../Colors/colorset';
 
 /*
  * Typography component provides styles for basic typography elements
@@ -67,7 +67,7 @@ import colors from '../Colors/colorset'
 
 export const Header1 = styled.h1`
   font-family: futura-pt-bold;
-`
+`;
 
 export const Header2 = styled.h2`
   font-family: futura-pt-bold, sans-serif;
@@ -75,7 +75,7 @@ export const Header2 = styled.h2`
   color: ${colors.dark};
   line-height: 1.4em;
   margin: 0;
-`
+`;
 
 export const Header3 = styled.h3`
   font-family: lato, sans-serif;
@@ -83,12 +83,12 @@ export const Header3 = styled.h3`
   color: ${colors.grey};
   font-weight: 700;
   margin: 0;
-`
+`;
 
 export const P = styled.p`
   font-family: lato;
   color: ${colors.dark};
-`
+`;
 
 /*
  * In ordder to show in the story (documentation) what are the available
@@ -98,8 +98,8 @@ export const P = styled.p`
 
 export const FuturaBold = styled.p`
   font-family: futura-pt-bold;
-`
+`;
 
 export const Lato = styled.p`
   font-family: lato;
-`
+`;

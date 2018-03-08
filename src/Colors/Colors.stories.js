@@ -8,20 +8,20 @@
  * of the TeamMember componet as an instance.
  */
 
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Color from 'color'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import Color from 'color';
 
 /* The components to use in the stories */
-import Box from '../Box'
+import Box from '../Box';
 
-import set from './colorset'
+import set from './colorset';
 
 storiesOf('Colors', module)
   .add('index', () => {
     const colorItems = Object.keys(set).map(key => {
 
-      const textColor = Color(set[key]).isLight() ? '#000' : '#FFF'
+      const textColor = Color(set[key]).isLight() ? '#000' : '#FFF';
 
       return(
         <Box color={set[key]} textColor={textColor} key={key}>
@@ -32,11 +32,11 @@ export const MyComponent = styled.div`}`{`
   color: \${colors.${key}};
 `}`</code></pre>
         </Box>
-      )
-    })
+      );
+    });
     return (
       <div>
         {colorItems}
       </div>
-    )
-  })
+    );
+  });

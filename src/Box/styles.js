@@ -1,16 +1,16 @@
-import styled, { css } from 'styled-components'
-import { withSize } from 'styled-utils'
+import styled, { css } from 'styled-components';
+import { withSize } from 'styled-utils';
 
 const addSpace = ({ hSpace, vSpace }) => {
-  if (!hSpace && !vSpace) return
+  if (!hSpace && !vSpace) return;
 
   return css`
     > *:not(:last-child) {
       ${hSpace && `margin-right: ${hSpace} !important;`}
       ${vSpace && `margin-bottom: ${vSpace} !important;`}
     }
-  `
-}
+  `;
+};
 
 /*
  * A styled component. By default, rendered with div
@@ -33,4 +33,4 @@ export const Box = styled.div`
 
   ${addSpace}
   ${withSize}
-`
+`;

@@ -1,19 +1,19 @@
 /*
  * Section component provides a container with paddings.
  */
-import React from 'react'
+import React from 'react';
 
 /*
  * For its styles, Section component uses plain CSS.
  * Change it to styled-components, if you want.
  */
-import s from './styles.css'
+import s from './styles.css';
 
 /*
  * Even though the component is using plain CSS, it still can re-use
  * styled-components from other patterns.
  */
-import * as ts from '../Typography/styles.js'
+import * as ts from '../Typography/styles.js';
 
 /*
  * Note! When using plain CSS, the class names have to be provided manually.
@@ -25,10 +25,10 @@ const Section = ({ children, ...props }) => {
         {children}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;
 
 /*
  * For re-use of Typography styles, Section component has a couple of subcomponents to be
@@ -36,9 +36,9 @@ export default Section
  * these wrappers are used.
  */
 export const SectionHeader = ({ children, ...props }) => {
-  return (<ts.Header1>{children}</ts.Header1>)
-}
+  return (<ts.Header1>{children}</ts.Header1>);
+};
 export const SectionText = ({ children, ...props }) => {
-  return (<ts.P>{children}</ts.P>)
-}
+  return (<ts.P>{children}</ts.P>);
+};
 

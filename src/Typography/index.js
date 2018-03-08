@@ -11,9 +11,9 @@
  */
 
 
-import React from 'react'
+import React from 'react';
 
-import * as ts from './styles.js'
+import * as ts from './styles.js';
 
 const Typography = () => {
 
@@ -46,7 +46,7 @@ const Typography = () => {
 `}</code></pre>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Typography
+export default Typography;

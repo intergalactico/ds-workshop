@@ -4,15 +4,14 @@
  * as different components and imported here.
  */
 
-import React from 'react'
-import { string } from 'prop-types'
+import React from 'react';
+import { string } from 'prop-types';
 
 import ButtonSimple from './ButtonSimple';
 import ButtonLink from './ButtonLink';
 import ButtonLabel from './ButtonLabel';
 
 const Button = ({ href, label, children, ...props }) => {
-
   /*
    * Different buttons to be rendered, depending on the
    * given properties
@@ -24,12 +23,11 @@ const Button = ({ href, label, children, ...props }) => {
   } else {
     return <ButtonSimple {...props}>{children}</ButtonSimple>;
   }
-
-}
+};
 
 Button.propTypes = {
   href: string,
   label: string
-}
+};
 
-export default Button
+export default Button;

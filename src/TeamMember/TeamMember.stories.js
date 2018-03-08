@@ -3,18 +3,18 @@
  * cases: with and without providing a list of social networks.
  */
 
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 /*
  * withInfo is an addon which provides a block with
  * information about the component. It includes the
  * code samples and properties documentation.
  */
-import { withInfo } from '@storybook/addon-info'
+import { withInfo } from '@storybook/addon-info';
 
-import TeamMember from '.'
+import TeamMember from '.';
 
-const avatar = require('../../assets/avatar.jpg')
+const avatar = require('../../assets/avatar.jpg');
 
 storiesOf('TeamMember', module)
   .add('index',
@@ -38,4 +38,4 @@ storiesOf('TeamMember', module)
         name="Donald Duck"
         title="Director of Everything"
       />
-  )))
+  )));

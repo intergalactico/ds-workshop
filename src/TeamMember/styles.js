@@ -1,17 +1,17 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 /*
  * One styled-component can re-use styles from another. The TeamMember
  * styled-component takes the styles from the Typography component
  * and re-defines them.
  */
-import * as ts from '../Typography/styles'
+import * as ts from '../Typography/styles';
 
-import colors from '../Colors/colorset'
+import colors from '../Colors/colorset';
 
 export const TeamMember = styled.div`
   text-align: center;
-`
+`;
 
 /*
  * By analogy to defining an HTML tag and styles for an element,
@@ -21,7 +21,7 @@ export const TeamMember = styled.div`
  */
 export const Title = styled(ts.Header3)`
   color: green;
-`
+`;
 
 /*
  * The colors can be takes from the set and used as variables.
@@ -33,14 +33,14 @@ export const IconList = styled.ul`
   margin-top: 20px;
   padding: 0;
   list-style: none;
-`
+`;
 
 export const IconListItem = styled.li`
   display: inline-block;
   margin-right: 15px;
-`
+`;
 
 export const IconLink = styled.a`
   color: ${colors.grey};
   text-decoration: none;
-`
+`;

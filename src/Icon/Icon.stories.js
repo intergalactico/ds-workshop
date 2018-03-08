@@ -1,19 +1,19 @@
 /* Helpful imports */
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 /*
  * withInfo is an addon which provides a block with
  * information about the component. It includes the
  * code samples and properties documentation.
  */
-import { withInfo } from '@storybook/addon-info'
+import { withInfo } from '@storybook/addon-info';
 
 /* The components to use in the stories */
-import Box from '../Box'
+import Box from '../Box';
 
 /* The component to document */
-import Icon from '.'
+import Icon from '.';
 
 storiesOf('Icon', module)
   .add('simple usage',
@@ -43,7 +43,7 @@ storiesOf('Icon', module)
             <Icon name='bug' color='#00d1b2' isCircular isInverted />
           </Box>
         </div>
-    )
+    );
   }))
   .add('with different size',
     withInfo()(() => {
@@ -55,7 +55,7 @@ storiesOf('Icon', module)
           <Icon name='gift' color='#00d1b2' isInverted size='2.0rem' />
           <Icon name='bug' color='#e91e63' isInverted size='3rem' />
         </Box>
-      )
+      );
   }))
   .add('social icons',
     withInfo()(() => {
@@ -65,5 +65,5 @@ storiesOf('Icon', module)
           <Icon name='linkedin' color='#888888' isInverted />
           <Icon name='github' color='#1b8ceb'isInverted />
         </Box>
-    )
-  }))
+    );
+  }));

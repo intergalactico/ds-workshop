@@ -1,16 +1,16 @@
 /* Helpful imports */
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 /*
  * withInfo is an addon which provides a block with
  * information about the component. It includes the
  * code samples and properties documentation.
  */
-import { withInfo } from '@storybook/addon-info'
+import { withInfo } from '@storybook/addon-info';
 
 /* The components to use in the stories */
-import Box from 'Box'
-import Icon from 'Icon'
+import Box from 'Box';
+import Icon from 'Icon';
 
 /* The component to document */
 import Button from '.';
@@ -25,7 +25,7 @@ storiesOf('Button', module)
       return (
         <div>
           <Box>
-            <Button onClick={function(){ alert('You clicked!')}}>I am just a button</Button>
+            <Button onClick={function(){ alert('You clicked!'); }}>I am just a button</Button>
           </Box>
           <Box>
             <Button color='#1b8ceb' textColor="#fff" href="http://sc5.io">I am a link button</Button>
@@ -42,7 +42,7 @@ storiesOf('Button', module)
             <Button color='#00d1b2' textColor="#fff" label='2048'>Like</Button>
           </Box>
         </div>
-      )
+      );
   }))
   .add('colors',
     withInfo()(() => {
@@ -74,7 +74,7 @@ storiesOf('Button', module)
             <Button color='#000' textColor="#fff" isOutlined>Black</Button>
           </Box>
         </div>
-      )
+      );
   }))
   .add('with different size',
     withInfo()(() => {
@@ -86,7 +86,7 @@ storiesOf('Button', module)
           <Button color='#888888' textColor="#fff" size='1.5rem'>Large</Button>
           <Button color='#000' textColor="#fff" size='2.0rem'>XLarge</Button>
         </Box>
-      )
+      );
   }))
   .add('with icon',
     withInfo()(() => {
@@ -104,5 +104,5 @@ storiesOf('Button', module)
             <Icon name='stack-overflow' />
           </Button>
         </Box>
-      )
-  }))
+      );
+  }));
