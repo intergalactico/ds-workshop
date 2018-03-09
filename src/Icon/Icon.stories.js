@@ -15,7 +15,7 @@ import Box from '../Box';
 /* The component to document */
 import Icon from '.';
 
-storiesOf('Icon', module)
+storiesOf('Icon', module) // eslint-disable-line no-undef
   .add('simple usage',
     withInfo(`
  The Icon component renders icons in different colors. This component

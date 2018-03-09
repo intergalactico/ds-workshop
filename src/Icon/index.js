@@ -6,8 +6,10 @@
 import React from 'react';
 import cx from 'classnames';
 import * as s from './styles';
+import { string, bool } from 'prop-types';
 
-const Component = ({ as = 'i', name, isInverted, ...props }) => {
+
+const Icon = ({ as = 'i', name, isInverted, ...props }) => {
   /* Adding an "API" classname, by which it is possible to redefine the component style properties */
   const className = cx(`icon fa fa-${name}`, props.className);
 
@@ -19,9 +21,15 @@ const Component = ({ as = 'i', name, isInverted, ...props }) => {
   );
 };
 
-Component.displayName = 'Icon';
-Component.defaultProps = {
+Icon.defaultProps = {
   size: 'normal'
 };
 
-export default Component;
+Icon.propTypes = {
+  as: string,
+  name: string,
+  isInverted: bool,
+  className: string
+};
+
+export default Icon;

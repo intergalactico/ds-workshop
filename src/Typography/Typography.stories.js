@@ -15,7 +15,7 @@ import Typography from '.';
  * what is needed to be rendered.
  */
 
-storiesOf('Typography', module)
+storiesOf('Typography', module) // eslint-disable-line no-undef
   .add('index',
     withInfo(`
  Typography component is needed to provide global CSS such as

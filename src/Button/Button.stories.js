@@ -15,7 +15,7 @@ import Icon from 'Icon';
 /* The component to document */
 import Button from '.';
 
-storiesOf('Button', module)
+storiesOf('Button', module) // eslint-disable-line no-undef
   .add('index',
     withInfo(`
  Button component provides interfaces for all types

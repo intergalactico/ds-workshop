@@ -24,6 +24,7 @@ Box.defaultProps = {
 };
 
 Box.propTypes = {
+  className: string,
   vSpace: string,
   hSpace: string,
   padding: string

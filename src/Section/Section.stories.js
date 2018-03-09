@@ -15,7 +15,7 @@ import { withInfo } from '@storybook/addon-info';
  */
 import Section, {SectionHeader, SectionText} from '.';
 
-storiesOf('Section', module)
+storiesOf('Section', module) // eslint-disable-line no-undef
   .add('index',
     withInfo(`
  Section component provides a container with paddings.

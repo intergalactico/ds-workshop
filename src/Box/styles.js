@@ -16,9 +16,9 @@ const addSpace = ({ hSpace, vSpace }) => {
  * A styled component. By default, rendered with div
  */
 export const Box = styled.div`
-  font-family: ${p => 'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif'};
-  border-radius: ${p => '3px'};
-  box-shadow: ${p => `
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  border-radius: 3px;
+  box-shadow: ${`
     0 2px 3px rgba(10, 10, 10, 0.1),
     0 0 0 1px rgba(10, 10, 10, 0.1)
   `};

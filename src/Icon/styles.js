@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
-import {
-  isCircular
-} from 'styled-utils';
+import { isCircular } from 'styled-utils';
 
 /*
  * In styled-components, you can define functions that output

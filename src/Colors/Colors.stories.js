@@ -17,7 +17,7 @@ import Box from '../Box';
 
 import set from './colorset';
 
-storiesOf('Colors', module)
+storiesOf('Colors', module) // eslint-disable-line no-undef
   .add('index', () => {
     const colorItems = Object.keys(set).map(key => {
 

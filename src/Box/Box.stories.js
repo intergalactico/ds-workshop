@@ -11,7 +11,7 @@ import { withInfo } from '@storybook/addon-info';
 /* The component to document */
 import Box from '.';
 
-storiesOf('Box', module)
+storiesOf('Box', module) // eslint-disable-line no-undef
   .add('default',
     withInfo(`
  The Box component provides a container, inside which you can put

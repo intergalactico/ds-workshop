@@ -14,9 +14,9 @@ import { withInfo } from '@storybook/addon-info';
 
 import TeamMember from '.';
 
-const avatar = require('../../assets/avatar.jpg');
+import avatar from '../../assets/avatar.jpg';
 
-storiesOf('TeamMember', module)
+storiesOf('TeamMember', module) // eslint-disable-line no-undef
   .add('index',
     withInfo(`
  The TeamMember component renders a card of a team member. It contains
