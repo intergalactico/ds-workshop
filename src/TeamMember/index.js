@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { string, array } from 'prop-types';
+import { string, object } from 'prop-types';
 
 /*
  * The TeamMember component has its own styles but also it used the styles
@@ -62,7 +62,7 @@ TeamMember.propTypes = {
   name: string.isRequired,
   title: string.isRequired,
   avatar: string.isRequired,
-  social: array
+  social: object
 };
 
 export default TeamMember;
